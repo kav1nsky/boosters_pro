@@ -20,5 +20,5 @@ from mainapp.views import upload_csv
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('csv', upload_csv, name='upload_csv'),
+    path('', upload_csv, name='upload_csv'),
 ]
