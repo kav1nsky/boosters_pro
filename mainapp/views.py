@@ -5,20 +5,22 @@ from mainapp.models import ForecastTable
 import numpy as np
 
 
+def calculate_mae(ideal_data, data_to_be_tested):
+    return np.absolute(ideal_data - data_to_be_tested).mean
+
+
+#wiki tells that if actual value = 0, mape = INF, but we can somehow calculate it
+def calculate_mape(ideal_data, data_to_be_tested):
+    diff = ideal_data - data_to_be_tested
+    return np.absolute(np.divide(diff, data_to_be_tested, out=np.zeros_like(diff), where=data_to_be_tested!=0)).mean
+
+
 def calculate_mae_and_mape(lines, forecast_title):
     forecast_data = ForecastTable.objects.get(name=forecast_title).data
     forecast_lines = forecast_data.splitlines()[1:]
     forecast_values = np.array([np.float16(v.split(',')[1]) for v in forecast_lines])
     data_to_test = np.array([np.float16(v.split(',')[1]) for v in lines])
-
-    mae = 0
-    mape = 0
-    for i in range(len(forecast_values)):
-        tmp = forecast_values[i] - data_to_test[i]
-        mae += np.absolute(tmp)
-        if forecast_values[i] != 0:
-            mape += np.absolute(tmp / forecast_values[i])
-    return {'mae': mae / len(forecast_values), 'mape': mape / len(forecast_values)}
+    return {'mae': calculate_mae(forecast_values, data_to_test), 'mape': calculate_mape(forecast_values, data_to_test)}
 
 
 def upload_csv(request):
