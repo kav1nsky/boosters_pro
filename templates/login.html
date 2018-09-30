@@ -1,0 +1,19 @@
+{% load socialaccount %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login page</title>
+</head>
+<body>
+  <div>
+    <a href="{% provider_login_url "vk" method="oauth2" %}"> Войти через VK </a>
+  </div>
+  <div style="margin-top: 20px;">
+    <a href="{% provider_login_url "github" method="oauth2" %}"> Войти через Github </a>
+  </div><div style="margin-top: 20px;">
+    <a href="/accounts/telegram/login"> Войти через Telegram </a>
+  </div>
+</body>
+</html>
