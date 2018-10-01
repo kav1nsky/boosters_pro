@@ -1,0 +1,75 @@
+@import '../../assets/colors.scss';
+@import '../../assets/sizes.scss';
+@import '../../assets/fonts';
+
+.header {
+  font-family: $font-family-firm;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: $header_height;
+
+  background: $color_dark_blue;
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+
+  user-select: none;
+  text-decoration: none;
+}
+
+.headerTitle {
+  font-family: $font-family-firm;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: $color_firm_white;
+  line-height: 24px;
+
+  position: absolute;
+  left: 10%;
+
+
+}
+
+.headerNavigate{
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+
+  right: 10%;
+  position: absolute;
+}
+
+.headerNavigateButton {
+  margin: 8px;
+
+  font-weight: bolder;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color_firm_white;
+
+  transition-duration: 0.4s;
+  user-select: none;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: 1px solid $color_firm_white;
+  }
+}
+
+.delimiterImg {
+
+}
+
