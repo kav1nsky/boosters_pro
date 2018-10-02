@@ -31,8 +31,8 @@ export class Header extends React.Component {
                         Регистрация
                     </div>
                 </div>
-
             </div>
+            <div className={styles.separator} />
         </div>
     }
 }
