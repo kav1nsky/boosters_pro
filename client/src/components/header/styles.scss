@@ -10,7 +10,8 @@
   right: 0;
   height: $header_height;
 
-  background: $color_dark_blue;
+  background: $color_firm_white;
+  opacity: 92%;
   z-index: 1000;
 
   display: flex;
@@ -24,21 +25,12 @@
   text-decoration: none;
 }
 
-.headerTitle {
-  font-family: $font-family-firm;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  color: $color_firm_white;
-  line-height: 24px;
-
+.headerContent {
   position: absolute;
-  left: 10%;
+  left: $left_reght_indents;
+  right: $left_reght_indents;
+  height: 100%;
 
-
-}
-
-.headerNavigate{
 
   display: flex;
   flex-direction: row;
@@ -47,29 +39,84 @@
   align-content: center;
   align-items: center;
 
-  right: 10%;
-  position: absolute;
 }
 
+.logoImg {
+  width: 40px;
+  height: 18.55px;
+  position: absolute;
+
+  top: 29px;
+
+}
+
+.headerTitle {
+  font-family: $font-family-firm;
+  font-style: normal;
+  font-weight: bold;
+
+  font-size: 18px;
+  color: $color_firm_blue;
+  line-height: 24px;
+
+  position: absolute;
+  left: 48px;
+
+  width: 118px;
+  height: 18px;
+
+  margin-right: 122px;
+}
+
+.headerNavigate{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+
+  position: absolute;
+  left: 248px;
+}
+
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
 .headerNavigateButton {
-  margin: 8px;
+  font-family: Roboto;
+  font-weight: 500; //medium
 
-  font-weight: bolder;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 16px;
-  color: $color_firm_white;
 
-  transition-duration: 0.4s;
+  color: $color_firm_blue;
+
+  transition-duration: 0.3s;
   user-select: none;
   cursor: pointer;
   text-decoration: none;
 
+  margin-right: 32px;
+
   &:hover {
-    border-bottom: 1px solid $color_firm_white;
+    border-bottom: 1px solid $color_firm_blue;
   }
 }
 
-.delimiterImg {
+.registrationNavigate {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
 
+  position: absolute;
+  right: 0;
 }
 
+.registrationNavigateButton {
+  @extend .headerNavigateButton;
+  margin-left: 31px;
+  margin-right: 0;
+}
