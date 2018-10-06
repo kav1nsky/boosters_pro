@@ -5,7 +5,7 @@
 
 .fullPageBack {
   position: absolute;
-  top: $header_height + 80px;
+
   width: 100%;
 
   display: flex;
@@ -55,9 +55,10 @@
 
   color: $color_firm_blue;
 
-  width: 600px;
+  width: 620px;
 
   margin-bottom: 8px;
+  margin-top: 144px;
 }
 
 .title {
@@ -68,6 +69,7 @@
 
   width: 560px;
   height: 20px;
+  margin-top: 0;
 }
 
 .smallText {
