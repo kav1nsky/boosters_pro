@@ -88,6 +88,8 @@
 
 
 .headerNavigateButton {
+  height: $header_height;
+
   font-family: $font-family-small;
   font-weight: 500; //medium
 
@@ -96,15 +98,20 @@
 
   color: $color_firm_blue;
 
-  transition-duration: 0.3s;
+  transition-duration: 0.1s;
   user-select: none;
   cursor: pointer;
   text-decoration: none;
 
   margin-right: 32px;
 
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
   &:hover {
-    border-bottom: 1px solid $color_firm_blue;
+    border-bottom: 4px solid $color_firm_light_blue;
   }
 }
 
