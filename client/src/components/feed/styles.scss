@@ -1,10 +1,11 @@
 @import '../../assets/colors';
 @import '../../assets/sizes';
 @import '../../assets/fonts';
+@import '../../assets/buttons';
 
 .fullPageBack {
   position: absolute;
-  top: $header_height + 30px;
+  top: $header_height + 80px;
   width: 100%;
 
   display: flex;
@@ -35,8 +36,60 @@
   position: relative;
 
   width: 100%;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: $left_right_indents;
+  margin-right: $left_right_indents;
   margin-bottom: $footer_height;
 }
 
+.mainImg {
+  position: fixed;
+  z-index: -1;
+  right: 95px;
+  top: 127px;
+}
+
+
+.mainTitle {
+  font-family: $font-family-firm;
+  font-weight: bold;
+
+  font-size: 28px;
+  line-height: 32px;
+  text-align: left;
+
+  color: $color_firm_blue;
+
+  width: 648px;
+
+  margin-bottom: 8px;
+}
+
+.title {
+  @extend .mainTitle;
+
+  font-size: 20px;
+  line-height: 23px;
+
+  width: 560px;
+  height: 20px;
+}
+
+.smallText {
+  font-family: $font-family-small;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: $color_firm_blue;
+
+  width: 456px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+
+.blueButtonMainPge{
+  @extend .blueButton;
+
+  margin-bottom: 80px;
+}

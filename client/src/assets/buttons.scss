@@ -1,0 +1,35 @@
+@import 'colors';
+@import 'fonts';
+
+.blueButton {
+  background: $color_firm_light_blue;
+  border-radius: 6px;
+
+  padding: 14px 24px;
+
+  color: $color_firm_white;
+  font-family: $font-family-small;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  transition-duration: 0.3s;
+  user-select: none;
+  cursor: pointer;
+  text-decoration: none;
+
+  margin-top: 4px;
+  min-width: 264px;
+}
+
+.wightButton {
+  @extend .blueButton;
+
+  background: $color_firm_white;
+  border: solid $color_grey;
+
+  color: $color_firm_light_blue;
+
+  margin-bottom: 40px;
+}
