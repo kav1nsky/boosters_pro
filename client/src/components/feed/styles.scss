@@ -9,7 +9,6 @@
   width: 100%;
 
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   align-content: flex-start;
@@ -24,7 +23,6 @@
   align-items: flex-start;
   align-content: flex-start;
   width: 100%;
-  margin-bottom: $footer_height - 100px;
 }
 
 .fullPageContent {
@@ -38,7 +36,6 @@
   width: 100%;
   margin-left: $left_right_indents;
   margin-right: $left_right_indents;
-  margin-bottom: $footer_height;
 }
 
 .mainImg {
@@ -47,7 +44,6 @@
   right: 95px;
   top: 127px;
 }
-
 
 .mainTitle {
   font-family: $font-family-firm;
@@ -59,7 +55,7 @@
 
   color: $color_firm_blue;
 
-  width: 648px;
+  width: 600px;
 
   margin-bottom: 8px;
 }
@@ -87,9 +83,84 @@
   margin-bottom: 16px;
 }
 
-
-.blueButtonMainPge{
+.blueButtonMainPge {
   @extend .blueButton;
 
   margin-bottom: 80px;
+}
+
+.statisticsContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+
+  margin-top: 36px;
+  margin-bottom: 48px;
+}
+
+.statistic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+
+  margin-right: 56px;
+}
+
+.statisticValue {
+  font-family: $font-family-firm;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 32px;
+
+  text-align: left;
+  color: $color_firm_blue;
+
+}
+
+.statisticDescription {
+  height: 36px;
+
+  font-family: $font-family-small;
+  font-size: 16px;
+  line-height: 20px;
+
+  text-align: left;
+  color: $color_firm_blue;
+}
+
+.agreement {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+
+  font-family: $font-family-small;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+
+  color: $color_firm_blue;
+
+  margin-top: 42px;
+  margin-bottom: 22px;
+}
+
+.socialNetworks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+
+  margin-bottom: 82px;
+}
+
+.socialNetworksImg {
+  margin-right: 19px;
 }

@@ -4,6 +4,7 @@
 .blueButton {
   background: $color_firm_light_blue;
   border-radius: 6px;
+  border:  solid $color_firm_light_blue;
 
   padding: 14px 24px;
 
@@ -21,6 +22,11 @@
 
   margin-top: 4px;
   min-width: 264px;
+
+  &:hover {
+    background: $color_firm_white;
+    color: $color_firm_light_blue;
+  }
 }
 
 .wightButton {
@@ -32,4 +38,31 @@
   color: $color_firm_light_blue;
 
   margin-bottom: 40px;
+
+  &:hover {
+    background: $color_firm_light_blue;
+    color: $color_firm_white;
+    border:  solid $color_firm_light_blue;
+  }
+}
+
+.agreementButton {
+  background: #CDCFDA;
+  border-radius: 2px;
+
+  padding: 4px 6px;
+
+  font-family: $font-family-small;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: left;
+  color: $color_dark_gery;
+
+  transition-duration: 0.3s;
+  user-select: none;
+  cursor: pointer;
+  text-decoration: none;
+
+  margin-left: 10px;
 }
