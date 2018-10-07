@@ -7,6 +7,7 @@ import main_image from "../../assets/media/main_image.png";
 import vk from "../../assets/media/vk.png"
 import telegram from "../../assets/media/telegram.png"
 import facebook from "../../assets/media/facebook.png"
+import {Link} from "react-router-dom";
 
 
 export class Feed extends Component {
@@ -52,9 +53,9 @@ export class Feed extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className={styles.blueButtonMainPge}>
+                        <Link to='/registration' className={styles.blueButtonMainPge}>
                             Зарегистрироваться
-                        </div>
+                        </Link>
                         <div className={styles.title}>
                             Чемпионаты по анализу данных
                         </div>

@@ -115,6 +115,12 @@
   }
 }
 
+.headerNavigateButtonActive {
+  @extend .headerNavigateButton;
+  border-bottom: 4px solid $color_firm_light_blue;
+}
+
+
 .registrationNavigate {
   display: flex;
   flex-direction: row;
@@ -133,14 +139,29 @@
   margin-right: 0;
 }
 
-.separator{
+.registrationNavigateButtonActive {
+  @extend .registrationNavigateButton;
+  border-bottom: 4px solid $color_firm_light_blue;
+}
+
+
+
+
+
+.separator {
   position: absolute;
-  left: $left_right_indents;
-  right: $left_right_indents;
+  left: 0;
+  right: 0;
   bottom: 0;
 
   height: 1px;
 
   background: $color_firm_blue;
   opacity: 0.2;
+}
+
+.separatorSmall{
+ @extend .separator;
+  left: $left_right_indents;
+  right: $left_right_indents;
 }

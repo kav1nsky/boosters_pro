@@ -7,7 +7,7 @@ import { views } from "../../constans/views";
 
 export const LoginPage = () => (
     <div>
-        <Header page={views.MAIN_PAGE}/>
+        <Header page={views.LOGIN_PAGE}/>
         <LoginFullPage/>
     </div>
 );
