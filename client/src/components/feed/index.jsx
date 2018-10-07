@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import styles from './styles.scss';
 
-import classnames from 'classnames';
-import {Footer} from "../footer";
+/*import classnames from 'classnames';*/
+
 import main_image from "../../assets/media/main_image.png";
 import vk from "../../assets/media/vk.png"
 import telegram from "../../assets/media/telegram.png"
@@ -100,7 +100,6 @@ export class Feed extends Component {
                         </div>
                     </div>
                 </div>
-                <Footer/>
             </div>
         );
     }

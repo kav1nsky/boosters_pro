@@ -1,0 +1,36 @@
+@import 'sizes';
+
+
+.fullPageBack {
+  position: absolute;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.fullPage {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 100%;
+}
+
+.fullPageContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  position: relative;
+
+  width: 100%;
+  margin-left: $left_right_indents;
+  margin-right: $left_right_indents;
+
+  padding-top: 144px;
+}
