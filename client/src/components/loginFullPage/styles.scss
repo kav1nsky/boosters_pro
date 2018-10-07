@@ -63,3 +63,34 @@
 
   width: 100%;
 }
+
+.separatorSection {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.separatorText {
+  font-family: $font-family-small;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  z-index: 5;
+  background: $color_firm_white;
+  color: $color_firm_blue;
+  padding: 0 5px;
+}
+
+.separatorLine {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: $color_separator;
+  z-index: 1;
+}

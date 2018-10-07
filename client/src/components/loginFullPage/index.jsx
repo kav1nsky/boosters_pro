@@ -20,6 +20,12 @@ export class LoginFullPage extends Component {
                                     Facebook
                                 </div>
                             </div>
+                            <div className={styles.separatorSection}>
+                                <div className={styles.separatorText}>
+                                    или
+                                </div>
+                                <div className={styles.separatorLine}/>
+                            </div>
                             <div className={styles.blueButtonLogin}>
                                 Войти
                             </div>
