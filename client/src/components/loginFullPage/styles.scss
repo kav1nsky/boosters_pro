@@ -37,6 +37,8 @@
   text-align: center;
 
   color: $color_firm_blue;
+
+  margin-bottom: 12px;
 }
 
 .loginSocial {
@@ -48,6 +50,7 @@
   align-content: space-between;
 
   width: 100%;
+  margin: 12px 0;
 }
 
 .whiteButtonSocial {
@@ -62,35 +65,54 @@
   @extend .blueButton;
 
   width: 100%;
+  padding: 12px 0;
+  margin-top: 16px;
+  margin-bottom: 24px;
 }
 
-.separatorSection {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  width: 100%;
-}
+.inputField {
+  border: solid 1px $color_light_grey;
+  border-radius: 4px;
 
-.separatorText {
+  width: calc(100% - 32px);
+  height: 44px;
+  background: #F7F8F9;
+
   font-family: $font-family-small;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  text-align: center;
-  z-index: 5;
-  background: $color_firm_white;
-  color: $color_firm_blue;
-  padding: 0 5px;
+  text-align: left;
+  color: black;
+  padding: 8px 16px;
+
+  margin-bottom: 16px;
 }
 
-.separatorLine {
-  position: absolute;
+.inputField::placeholder {
+  color: $color_input;
+}
 
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: $color_separator;
-  z-index: 1;
+.inputText {
+  width: 100%;
+  font-family: $font-family-small;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+
+  color: $color_input_text;
+
+  margin-bottom: 6px;
+}
+
+.forgotPassword {
+  @extend .title;
+  line-height: 20px;
+  font-weight: 500;
+
+  user-select: none;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 0;
+
 }
