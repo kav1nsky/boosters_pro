@@ -14,7 +14,7 @@
 
 .mainImg {
   position: fixed;
-  z-index: 0;
+  z-index: -1;
   right: 95px;
   top: 127px;
 }
@@ -58,10 +58,19 @@
   margin-bottom: 16px;
 }
 
-.blueButtonMainPge {
+.blueButtonMainPage {
   @extend .blueButton;
 
+  margin-top: 4px;
+  width: 264px;
   margin-bottom: 80px;
+}
+
+.whiteButtonMainPage {
+  @extend .whiteButton;
+
+  width: 264px;
+  margin-bottom: 40px;
 }
 
 .statisticsContent {

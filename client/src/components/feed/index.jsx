@@ -53,7 +53,7 @@ export class Feed extends Component {
                                 </div>
                             </div>
                         </div>
-                        <Link to='/registration' className={styles.blueButtonMainPge}>
+                        <Link to='/registration' className={styles.blueButtonMainPage}>
                             Зарегистрироваться
                         </Link>
                         <div className={styles.title}>
@@ -64,7 +64,7 @@ export class Feed extends Component {
                             лучше всех
                             известных методов. Выбирай чемпионат по интересу и получай новые знания.
                         </div>
-                        <div className={styles.wightButton}>
+                        <div className={styles.whiteButtonMainPage}>
                             Выбрать чемпионат
                         </div>
                         <div className={styles.title}>
@@ -75,7 +75,7 @@ export class Feed extends Component {
                             в изолированной точке. Рекламный блок обычно правомочен. Исключительная лицензия
                             добросовестно использует ролевой поведенческий таргетинг.
                         </div>
-                        <div className={styles.wightButton}>
+                        <div className={styles.whiteButtonMainPage}>
                             Открыть рейтинг
                         </div>
                         <div className={styles.title}>
@@ -85,7 +85,7 @@ export class Feed extends Component {
                             Интеграл Дирихле синхронизирует международный гарант. По требованию собственника основная
                             стадия проведения рыночного исследования индоссирует креативный пул лояльных изданий.
                         </div>
-                        <div className={styles.wightButton}>
+                        <div className={styles.whiteButtonMainPage}>
                             Посетить сообщество
                         </div>
                         <div className={styles.agreement}>

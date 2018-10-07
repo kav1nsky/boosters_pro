@@ -4,3 +4,62 @@
 @import '../../assets/buttons';
 @import '../../assets/main';
 
+.fullPageContent {
+  padding-top: 88px;
+
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.loginForm {
+  background: $color_firm_white;
+  border-radius: 8px;
+  border: solid 1px $color_border_grey;
+
+  padding: 40px 32px;
+  height: $height_login - 2*40px;
+  width: $width_login_registration - 2*32px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+
+.title {
+  font-family: $font-family-small;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+
+  color: $color_firm_blue;
+}
+
+.loginSocial {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+
+  width: 100%;
+}
+
+.whiteButtonSocial {
+  @extend .whiteButton;
+
+  width: 236px;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.blueButtonLogin {
+  @extend .blueButton;
+
+  width: 100%;
+}

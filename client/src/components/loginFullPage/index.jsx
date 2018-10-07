@@ -8,7 +8,22 @@ export class LoginFullPage extends Component {
             <div className={styles.fullPageBack}>
                 <div className={styles.fullPage}>
                     <div className={styles.fullPageContent}>
-                        Login
+                        <div className={styles.loginForm}>
+                            <div className={styles.title}>
+                                Войдите с помощью соцсетей
+                            </div>
+                            <div className={styles.loginSocial}>
+                                <div className={styles.whiteButtonSocial}>
+                                    Вконтакте
+                                </div>
+                                <div className={styles.whiteButtonSocial}>
+                                    Facebook
+                                </div>
+                            </div>
+                            <div className={styles.blueButtonLogin}>
+                                Войти
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

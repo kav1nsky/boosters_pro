@@ -10,8 +10,8 @@ import {RegistrationPage} from "../views/registration";
 const MainRouter = () => (
     <Switch>
         <Route exact path='/' component={MainPage}/>
-        <Route exact path='/login' component={LoginPage}/>
-        <Route exact path='/registration' component={RegistrationPage}/>
+        <Route path='/login' component={LoginPage}/>
+        <Route path='/registration' component={RegistrationPage}/>
     </Switch>
 );
 

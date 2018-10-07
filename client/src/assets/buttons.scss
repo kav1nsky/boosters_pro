@@ -4,9 +4,14 @@
 .blueButton {
   background: $color_firm_light_blue;
   border-radius: 6px;
-  border:  solid $color_firm_light_blue;
+  border:  solid  2px $color_firm_light_blue;
 
-  padding: 14px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  height: 44px;
 
   color: $color_firm_white;
   font-family: $font-family-small;
@@ -20,29 +25,24 @@
   cursor: pointer;
   text-decoration: none;
 
-  margin-top: 4px;
-  min-width: 264px;
-
   &:hover {
     background: $color_firm_white;
     color: $color_firm_light_blue;
   }
 }
 
-.wightButton {
+.whiteButton {
   @extend .blueButton;
 
   background: $color_firm_white;
-  border: solid $color_grey;
+  border: solid  2px $color_grey;
 
   color: $color_firm_light_blue;
-
-  margin-bottom: 40px;
 
   &:hover {
     background: $color_firm_light_blue;
     color: $color_firm_white;
-    border:  solid $color_firm_light_blue;
+    border:  solid  2px $color_firm_light_blue;
   }
 }
 
