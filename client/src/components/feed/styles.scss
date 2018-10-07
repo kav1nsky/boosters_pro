@@ -4,6 +4,9 @@
 @import '../../assets/buttons';
 @import '../../assets/main';
 
+.fullPageBack {
+  background: none;
+}
 
 .fullPageContent {
   padding-top: 144px;
@@ -11,7 +14,7 @@
 
 .mainImg {
   position: fixed;
-  z-index: -1;
+  z-index: 0;
   right: 95px;
   top: 127px;
 }

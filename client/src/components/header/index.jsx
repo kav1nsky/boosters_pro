@@ -17,24 +17,25 @@ export const Header = ({page}) => (
             <div className={styles.headerNavigate}>
                 <div className={styles.headerNavigateButton}>
                     Чемпионаты
+                    {page === views.CHAMPIONSHIPS_PAGE ?  <div className={styles.activePage}/> : <div/>}
                 </div>
                 <div className={styles.headerNavigateButton}>
                     Рейтинг
+                    {page === views.RATING_PAGE?  <div className={styles.activePage}/> : <div/>}
                 </div>
                 <div className={styles.headerNavigateButton}>
                     О нас
+                    {page === views.ABOUT_PAGE ?  <div className={styles.activePage}/> : <div/>}
                 </div>
             </div>
             <div className={styles.registrationNavigate}>
-                <Link to='/login' className={page === views.LOGIN_PAGE ?
-                    styles.registrationNavigateButtonActive :
-                    styles.registrationNavigateButton}>
+                <Link to='/login' className={styles.registrationNavigateButton}>
                     Вход
+                    {page === views.LOGIN_PAGE ?  <div className={styles.activePage}/> : <div/>}
                 </Link>
-                <Link to='/registration' className={page === views.REGISTRATION_PAGE ?
-                    styles.registrationNavigateButtonActive :
-                    styles.registrationNavigateButton}>
+                <Link to='/registration' className={ styles.registrationNavigateButton}>
                     Регистрация
+                    {page === views.REGISTRATION_PAGE ?  <div className={styles.activePage}/> : <div/>}
                 </Link>
             </div>
         </div>

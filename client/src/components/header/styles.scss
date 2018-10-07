@@ -88,6 +88,7 @@
 
 
 .headerNavigateButton {
+  position: relative;
   height: $header_height;
 
   font-family: $font-family-small;
@@ -110,14 +111,6 @@
   align-content: center;
   align-items: center;
 
-  &:hover {
-    border-bottom: 4px solid $color_firm_light_blue;
-  }
-}
-
-.headerNavigateButtonActive {
-  @extend .headerNavigateButton;
-  border-bottom: 4px solid $color_firm_light_blue;
 }
 
 
@@ -139,15 +132,6 @@
   margin-right: 0;
 }
 
-.registrationNavigateButtonActive {
-  @extend .registrationNavigateButton;
-  border-bottom: 4px solid $color_firm_light_blue;
-}
-
-
-
-
-
 .separator {
   position: absolute;
   left: 0;
@@ -164,4 +148,13 @@
  @extend .separator;
   left: $left_right_indents;
   right: $left_right_indents;
+}
+
+.activePage {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  height: 4px;
+  background: $color_firm_light_blue;
 }
